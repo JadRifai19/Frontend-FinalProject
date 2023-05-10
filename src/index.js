@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import NavBar from './components/navBar/navBar.js';
+import NavBar from './components/NavBar/NavBar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App>
-    <App path = "./components/navBar/navBar.js" element={NavBar}></App>
+    <App path = "./components/NavBar/NavBar.js" element={NavBar}></App>
     </App>
   </React.StrictMode>
 );
