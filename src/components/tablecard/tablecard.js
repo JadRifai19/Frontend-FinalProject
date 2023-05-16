@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './tablecard.css';
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import Table from '../../assets/tablett.jpeg';
+import Table from '../../assets/tabletennis.jpeg';
+
 
 
 export default function TablecardShopping() {

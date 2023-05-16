@@ -1,7 +1,8 @@
 import React from "react";
 import Carousel from "../../components/carousal/carousal.js";
-import Image1 from "../../assets/download.jpeg";
-import Image2 from "../../assets/images.jpeg";
+import Image1 from '../../assets/image1.jpeg';
+import Image2 from '../../assets/image2.jpeg';
+import Profile from '../../assets/profilepic.jpg';
 import "./home.css";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
   return (
     <div className="home">
       <Carousel images={slides} />
-      <p className="title-homepage"> Who We Are</p>
+      <p className="title-homepage"> Our Coaches</p>
       <div className="who-we-are">
         <div className="card">
           <div class="headhomepage">
@@ -26,14 +27,13 @@ export default function Home() {
               <img src={Image1} alt="Image 1" />
             </div>
             <div className="card-back">
-              <h2>Who we are</h2>
-              <p>
+              <div className="homeprofpic"><img src={Profile} alt="profile pic" /> </div>
+              <p className="descriptionofcoach">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                feugiat, tellus vel tempor fringilla, elit dui faucibus mi, id
-                congue augue ligula eu massa. Aenean commodo augue at nulla
+                feugiat, tellus vel tempor Aenean commodo augue at nulla
                 faucibus ullamcorper.
               </p>
-              <button className="buttonhome"> go to training</button>
+              <button className="buttonhome">Training schedule</button>
             </div>
           </div>
         </div>
@@ -52,14 +52,13 @@ export default function Home() {
               <img src={Image2} alt="Image 2" />
             </div>
             <div className="card-back">
-              <h2>Who we are</h2>
-              <p>
+            <div className="homeprofpic"><img src={Profile} alt="profile pic" /> </div>
+            <p className="descriptionofcoach">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                feugiat, tellus vel tempor fringilla, elit dui faucibus mi, id
-                congue augue ligula eu massa. Aenean commodo augue at nulla
+                feugiat, tellus vel tempor Aenean commodo augue at nulla
                 faucibus ullamcorper.
               </p>
-              <button className="buttonhome"> go to training</button>
+              <button className="buttonhome">Training schedule</button>
             </div>
           </div>
         </div>

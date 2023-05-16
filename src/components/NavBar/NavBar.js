@@ -84,7 +84,7 @@ function Navbar() {
           </li>
         </ul>
         <Link to="sign-up">
-          <button className="btn">Sign Up</button>
+          <button className="btnnav">Sign Up</button>
         </Link>
         <div className="icons">
           <ul className="nav-icon">

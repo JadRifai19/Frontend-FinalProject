@@ -5,14 +5,21 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Home from "./pages/home/home.js";
 import Footer from "./components/footer/footer.js";
 import Shopping from "./pages/shopping/shopping.js";
+import SignUp from './pages/signup/signup.js';
+import TeamTraining from './pages/teamtraining/teamtraining.js';
+import PrivateTraining from './pages/privatetraining/privatetraining.js';
+
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <Home />
-      <Footer />
+      {/* <Home /> */}
       {/* <Shopping />  */}
+      {/* < TeamTraining /> */}
+      {/* <PrivateTraining/> */}
+      {/* <SignUp /> */}
+      <Footer />
     </Router>
   );
 }
