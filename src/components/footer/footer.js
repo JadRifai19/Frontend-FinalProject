@@ -95,7 +95,7 @@ export default function Footer() {
             <a href="#" className="social-icon">
               <InstagramIcon />
             </a>
-            <a href="#" className="social-icon">
+            <a href="#" className="social-icon-facebook">
               <FacebookIcon />
             </a>
           </div>
@@ -104,8 +104,8 @@ export default function Footer() {
             <a href="#" className="social-icon">
               <InstagramIcon />
             </a>
-            <a href="#" className="social-icon">
-              <FacebookIcon />
+            <a href="#" className="social-icon-facebook">
+             <FacebookIcon />
             </a>
           </div>
           <span className="ownerfooter"> - Rami Rifaii</span>

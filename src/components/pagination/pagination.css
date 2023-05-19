@@ -1,0 +1,25 @@
+.paginationWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+  
+  .paginationButton {
+    padding: 8px 16px;
+    margin-left: 5px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .paginationButton:hover {
+    background-color: #c0c0c0;
+  }
+  
+  .paginationButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }

@@ -66,6 +66,8 @@
   
   .locationdaher {
     margin-left: 95px;
+    font-style: oblique;
+    font-weight: 900;
   }
   
   .followfooter {
@@ -213,4 +215,14 @@
       margin-top: 40px;
     }
     
+    .social-icon-facebook {
+      color: #fff;
+      margin-top: 20px;
+      margin-left: 7px;
+    }
+    
+    .social-icon-facebook:hover {
+      color: blue;
+      transition: 0.7s;
+    }
     

@@ -1,0 +1,36 @@
+.buttontraining33{
+    color: blue;
+    font-size: 14px;
+}
+
+.buttontraining33:hover{
+    color: black;
+}
+
+
+.color-word {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .color-circle.green {
+    background-color: green;
+  }
+  
+  .color-circle.red {
+    background-color: red;
+  }
+  
+  .color-circle.black {
+    background-color: black;
+  }
+  
