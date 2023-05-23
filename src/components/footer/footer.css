@@ -1,228 +1,225 @@
+.footer {
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  color: #fff;
+  min-height: 380px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.titlefooter {
+  background-image: url("../../assets/pingpong.jpeg");
+  -webkit-background-clip: text;
+  color: transparent;
+  display: flex;
+  font-size: 53px;
+  margin-top: 23px;
+  margin-left: -47px;
+}
+
+.locationfooter {
+  display: flex;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #666666;
+}
+
+.footerdescription {
+  max-width: 300px;
+  margin-top: 25px;
+  margin-left: 60px;
+}
+
+.section2header {
+  font-size: 40px;
+}
+
+.emailfooter {
+  display: flex;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.section2headerph {
+  font-size: 21px;
+  display: flex;
+}
+
+.locationfooter {
+  margin-left: 60px;
+}
+
+.registerfooter {
+  font-size: 40px;
+}
+
+.locationdaher {
+  margin-left: 95px;
+  font-style: oblique;
+  font-weight: 900;
+}
+
+.followfooter {
+  font-size: 14px;
+  margin-top: 90px;
+  font-size: 18px;
+}
+
+.followusicon {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.followusicon .MuiSvgIcon-root {
+  margin-right: 5px;
+}
+
+.followusicon:hover {
+  color: red;
+  transition: 0.7s;
+}
+
+.social-icon {
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 7px;
+}
+
+.social-icon:hover {
+  color: red;
+  transition: 0.7s;
+}
+
+.input-wrapper {
+  position: absolute;
+}
+
+.inputfooter {
+  width: 105%;
+  height: 30px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.send-button {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  right: 0;
+  width: 20px;
+  margin-right: -30px;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.send-button:hover {
+  color: red;
+  transition: 0.7s;
+}
+
+.sent .send-button::before {
+  background-color: red;
+}
+
+.ownerfooter {
+  display: flex;
+  margin-top: -26px;
+  margin-left: 75px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
   .footer {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-    color: #fff;
-    min-height: 380px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    
+    flex-direction: column;
+    align-items: center;
   }
-  
 
   .titlefooter {
-    background-image: url("../../assets/pingpong.jpeg");
-    -webkit-background-clip: text;
-    color: transparent;
-    display: flex;
-    font-size: 53px;
-    margin-top: 23px;
-    margin-left: -47px;
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 36px;
+    text-align: center;
   }
-  
-  .locationfooter {
-    display: flex;
-    font-size: 20px;
-    margin-top: 20px;
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 20px;
   }
-  
-  .footer-section h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section p {
-    font-size: 14px;
-    color: #666666;
-  }
-  
-  .footerdescription {
-    max-width: 300px;
-    margin-top: 25px;
-    margin-left: 60px;
-  }
-  
-  .section2header {
-    font-size: 40px;
-  }
-  
-  .emailfooter {
-    display: flex;
-    font-size: 20px;
-    margin-top: 40px;
-  }
-  
+
+  .locationfooter,
+  .emailfooter,
   .section2headerph {
-    font-size: 21px;
-    display: flex;
+    justify-content: center;
   }
-  
-  .locationfooter {
-    margin-left: 60px;
-  }
-  
-  .registerfooter{
-    font-size: 40px;  
-    }
-  
+
   .locationdaher {
-    margin-left: 95px;
-    font-style: oblique;
-    font-weight: 900;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
   }
-  
+
+  .footerdescription {
+    margin-left: 0;
+    text-align: center;
+  }
+
   .followfooter {
-    font-size: 14px;
-    margin-top: 90px;
-    font-size: 18px;
+    text-align: center;
   }
-  
-  .followusicon {
-    display: flex;
-    align-items: center;
-    color: #fff;
+}
+
+@media (max-width: 480px) {
+  .titlefooter {
+    font-size: 24px;
   }
-  
+
+  .section2header {
+    font-size: 30px;
+  }
+
+  .followfooter {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
   .followusicon .MuiSvgIcon-root {
-    margin-right: 5px;
+    margin-right: 3px;
   }
-  
-  .followusicon:hover {
-    color: red;
-    transition: 0.7s;
-  }
-  
-  .social-icon {
-    color: #fff;
-    margin-top: 20px;
-    margin-left: 7px;
-  }
-  
-  .social-icon:hover {
-    color: red;
-    transition: 0.7s;
-  }
-  
-  .input-wrapper {
-    position: absolute; 
-  }
-  
-  .inputfooter {
-    width: 105%;
-    height: 30px;
-    padding: 5px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-  }
-  
-  .send-button {
-    position: absolute;
-    color: #fff;
-    top: 0;
-    right: 0;
-    width: 20px;
-    margin-right: -30px;
-    height: 100%;
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  .send-button:hover {
-    color: red;
-    transition: 0.7s;
-  }
-  
-  .sent .send-button::before {
-    background-color: red;
-  }
+}
 
-  .ownerfooter{
-    display: flex;
-    margin-top: -26px;
-    margin-left: 75px;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-    .footer {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .titlefooter {
-      margin-left: 0;
-      margin-top: 10px;
-      font-size: 36px;
-      text-align: center;
-    }
-  
-    .footer-section {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  
-    .locationfooter,
-    .emailfooter,
-    .section2headerph {
-      justify-content: center;
-    }
-  
-    .locationdaher {
-        margin-left: 0;
-        margin-top: 10px;
-        text-align: center;
-      }
-    
-      .footerdescription {
-        margin-left: 0;
-        text-align: center;
-      }
-    
-      .followfooter {
-        text-align: center;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .titlefooter {
-        font-size: 24px;
-      }
-    
-      .section2header {
-        font-size: 30px;
-      }
-    
-      .followfooter {
-        font-size: 12px;
-        margin-top: 10px;
-      }
-    
-      .followusicon .MuiSvgIcon-root {
-        margin-right: 3px;
-      }
-    }
+.footer-section2 {
+  margin-top: 40px;
+}
 
-    .footer-section2 {
-      margin-top: 40px;
-    }
-    
-    .footer-section3 {
-      margin-top: 40px;
-    }
-    
-    .social-icon-facebook {
-      color: #fff;
-      margin-top: 20px;
-      margin-left: 7px;
-    }
-    
-    .social-icon-facebook:hover {
-      color: blue;
-      transition: 0.7s;
-    }
-    
+.footer-section3 {
+  margin-top: 40px;
+}
+
+.social-icon-facebook {
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 7px;
+}
+
+.social-icon-facebook:hover {
+  color: blue;
+  transition: 0.7s;
+}

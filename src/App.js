@@ -18,8 +18,8 @@ function App() {
       {/* <Shopping />  */}
       {/* < TeamTraining /> */}
       {/* <PrivateTraining/> */}
-      <ContactUs/>
-      {/* <SignUp /> */}
+      {/* <ContactUs/> */}
+      <SignUp />
       <Footer /> 
     </Router>
   );
