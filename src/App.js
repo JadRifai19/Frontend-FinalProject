@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Navbar />
       {/* <Home /> */}
-      {/* <Shopping />  */}
+      {/* <Shopping />   */}
       {/* < TeamTraining /> */}
       {/* <PrivateTraining/> */}
       {/* <ContactUs/> */}

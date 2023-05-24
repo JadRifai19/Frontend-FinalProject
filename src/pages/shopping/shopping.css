@@ -15,7 +15,8 @@
   object-fit: cover;
 }
 
-.cardshopping{
+.cardshopping {
+  
   display: flex;
   flex-wrap: wrap;
   gap: 70px;
@@ -29,3 +30,14 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .cardshopping .card {
+    flex-basis: calc(50% - 10px); /* 50% minus the margin between cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .cardshopping .card {
+    flex-basis: 100%; /* 100% width */
+  }
+}

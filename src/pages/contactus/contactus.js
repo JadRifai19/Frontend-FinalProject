@@ -3,35 +3,28 @@ import './contactus.css';
 
 export default function contactus() {
   return (
-    <div className='contact-us'>
-      <div class="cont">
-  <h1>
-    <span class="red-contact-us">C</span> 
-     ontact 
-    <span class="red-contact-us">U</span>
-    s
-  </h1>
-  <div class="contact">
+    <div className="contact-container">
+      <h1>Contact Us</h1>
+      <form>
+        <div className="field-wrap-contact-us-page">
+          <label htmlFor="name"></label>
+          <input placeholder='Name' type="text" id="name" />
+        </div>
 
-    <input type="text" 
-           class="c1"
-           placeholder="First name *" />
+        <div className="field-wrap-contact-us-page">
+          <label htmlFor="email"></label>
+          <input placeholder='Email' type="email" id="email" />
+        </div>
 
-    <input type="text"
-           class="c2"
-           placeholder="Last name *" />
+        <div className="field-wrap-contact-us-page">
+          <label htmlFor="message"></label>
+          <textarea placeholder='Message' id="message" rows="6"></textarea>
+        </div>
 
-    <input type="email"
-           class="c3"
-           placeholder="Email address *" />
-
-    <textarea class="c4"
-              placeholder="Message" ></textarea>
-
-    <button className='btnnav' > send </button>
-
-  </div>
-</div>
+        <button type="submit" className="button button-block">
+          Send Message
+        </button>
+      </form>
     </div>
   )
 }

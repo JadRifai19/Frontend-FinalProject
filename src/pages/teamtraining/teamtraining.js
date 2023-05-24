@@ -17,54 +17,73 @@ export default function teamtraining() {
         <img src={jadImageSrc} alt="Hero Image" />
       </div>
          <div className="header"></div>
-      <div className="container-team-trainig">
-        <div className="about-team-training">
-          <div className="left">
-            <h1 className="title-team-training"> Team A : Coach Rami</h1>
-            <hr />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-          </div>
-          <div className="right">
-            <img src={jadImageSrc}  />
-          </div>
-        </div>
-        <div className="mission">
-          <div className="left">
-            <img src={jadImageSrc} />
-          </div>
-          <div className="right">
-            <h1 className="title-team-training">Team B : Coach Jad</h1>
-            <hr />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-        </div>
+         <div className="container-team-training">
+  <div className="about-team-training">
+    <div className="left">
+      <h1 className="title-team-training">Team A : Coach Rami</h1>
+      <hr />
+
+      <table className="schedule-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>9:00</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>19:00</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>19:00</td>
+          </tr>
+        </tbody>
+      </table>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt hic eveniet enim beatae quis. Maiores, nostrum sunt ut recusandae laborum voluptate amet sed, dolores hic quasi ab! Quibusdam, architecto?</p>
+    </div>
+    <div className="right">
+      <img src={jadImageSrc} alt="Coach Rami" />
+    </div>
+  </div>
+  <div className="mission">
+    <div className="left">
+      <img src={jadImageSrc} alt="Coach Jad" />
+    </div>
+    <div className="right">
+      <h1 className="title-team-training">Team B : Coach Jad</h1>
+      <hr />
+      <table className="schedule-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tuseday</td>
+            <td>19:00</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>19:00</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>10:00</td>
+          </tr>
+        </tbody>
+      </table>
+          <p className="description-team-trainnig">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus ea laborum nulla nisi amet, explicabo magnam aspernatur doloribus distinctio est officiis placeat harum, nam iure, culpa vitae exercitationem itaque!</p>
+    </div>
+  </div>
+</div>
       <div className="team-players">
   <h2 className="meet-our-best-team">OUR TEAM </h2>
   <p className="we-are-proud-team">We are proud to support elite table tennis teams and players from around the world.</p>

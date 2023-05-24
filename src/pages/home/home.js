@@ -12,8 +12,12 @@ export default function Home() {
 
   return (
     <div className="home">
-      <div className="imagehomehome"> <Carousel images={slides} /> </div> 
-      <h2 className="title-homepage"> Our Coaches</h2>
+      <div className="imagehomehome">
+        <Carousel images={slides} />
+      </div>
+      <div className="centered-heading">
+        <h2 className="title-homepage">Our Coaches</h2>
+      </div>
       <div className="who-we-are">
         <div className="card">
           <div class="headhomepage">

@@ -3,9 +3,31 @@ import './signup.css';
 
 const SignUpForm = () => {
   const [activeTab, setActiveTab] = useState('signup');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
+  };
+
+  const handleSignUp = (e) => {
+    e.preventDefault();
+    // Perform signup logic using the form data (firstName, lastName, email, password)
+    console.log('Sign up form submitted');
+    console.log('First Name:', firstName);
+    console.log('Last Name:', lastName);
+    console.log('Email:', email);
+    console.log('Password:', password);
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    // Perform login logic using the form data (email, password)
+    console.log('Login form submitted');
+    console.log('Email:', email);
+    console.log('Password:', password);
   };
 
   return ( 
@@ -23,20 +45,34 @@ const SignUpForm = () => {
         <div id="signup" style={{ display: activeTab === 'signup' ? 'block' : 'none' }}>
           <h1>Sign Up for Free</h1>
 
-          <form action="/" method="post">
+          <form onSubmit={handleSignUp}>
             <div className="top-row">
               <div className="field-wrap">
                 <label>
                   <span className="req"></span>
                 </label>
-                <input type="text" placeholder="First Name" required autoComplete="off" />
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  required
+                  autoComplete="off"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                />
               </div>
 
               <div className="field-wrap">
                 <label>
                   <span className="req"></span>
                 </label>
-                <input type="text" placeholder="Last Name" required autoComplete="off" />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                  autoComplete="off"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                />
               </div>
             </div>
 
@@ -44,14 +80,28 @@ const SignUpForm = () => {
               <label>
                 <span className="req"></span>
               </label>
-              <input type="email" placeholder="Email Address" required autoComplete="off" />
+              <input
+                type="email"
+                placeholder="Email Address"
+                required
+                autoComplete="off"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
 
             <div className="field-wrap">
               <label>
                 <span className="req"></span>
               </label>
-              <input type="password" placeholder="Set A Password" required autoComplete="off" />
+              <input
+                type="password"
+                placeholder="Set A Password"
+                required
+                autoComplete="off"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
 
             <button type="submit" className="button button-block">
@@ -63,19 +113,33 @@ const SignUpForm = () => {
         <div id="login" style={{ display: activeTab === 'login' ? 'block' : 'none' }}>
           <h1>Welcome Back!</h1>
 
-          <form action="/" method="post">
+          <form onSubmit={handleLogin}>
             <div className="field-wrap">
               <label>
                 <span className="req"></span>
               </label>
-              <input type="email" placeholder="Email Address" required autoComplete="off" />
+              <input
+                type="email"
+                placeholder="Email Address"
+                required
+                autoComplete="off"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
 
             <div className="field-wrap">
               <label>
                 <span className="req"></span>
               </label>
-              <input type="password" placeholder="Password" required autoComplete="off" />
+              <input
+                type="password"
+                placeholder="Password"
+                required
+                autoComplete="off"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
 
             <p className="forgot">

@@ -33,85 +33,89 @@ export default function Footer() {
 
   return (
     <div className="footer-container">
-    <footer className="footer">
-      <ToastContainer />
+      <footer className="footer">
+        <ToastContainer />
 
-      <div className="footer-section1">
-        <p className="titlefooter">Ping Pong</p>
+        <div className="footer-section1">
+          <p className="titlefooter">Ping Pong</p>
 
-        <span className="locationfooter">
-          <LocationOnIcon /> <span> - </span> Find us{" "}
-        </span>
-        <p className="locationdaher">Daher Al Ein</p>
-        <p className="footerdescription">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit
-          asperiores autem commodi fugit blanditiis, voluptatibus ipsa repellat
-          n
-        </p>
-      </div>
+          <span className="locationfooter">
+            <LocationOnIcon /> <span> - </span> Find us{" "}
+          </span>
+          <p className="locationdaher">Daher Al Ein</p>
+          <p className="footerdescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit
+            asperiores autem commodi fugit blanditiis, voluptatibus ipsa repellat
+            n
+          </p>
+        </div>
 
-      <div className="footer-section2">
-        <span className="section2header">contact us</span>
-        <div className="emailfooter">
-          <EmailIcon /> <span> - </span> mail us
-        </div>
-        <div className="mailinside">
-          <p>jad.rami.rifaii19@gmail.com</p>
-          <p>ramimostafarifaii@gmail.com</p>
-        </div>
-        <div className="section2headerph">
-          <PhoneIcon /> <span> - </span> call us
-        </div>
-        <div className="mailinside">
-          <p>76 597610 - Jad Rifaii</p>
-          <p>70 701287 - Rami Rifaii</p>
-        </div>
-      </div>
-
-      <div className="footer-section3">
-        <span className="registerfooter">Register</span>
-        <p>
-          Don't forget to register for our training. Feel free to send a
-          message:
-        </p>
-        <div className="input-wrapper">
-          <input
-            type="text"
-            placeholder="Send a message"
-            className={`inputfooter ${sent ? "sent" : ""}`}
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-          <button
-            className={`send-button ${sent ? "sent" : ""}`}
-            onClick={sendMessage}
-          >
-            {sent ? <FaCheck /> : <FaPaperPlane />}
-          </button>
-        </div>
-        <div className="followfooter">
-          <span className="">Follow us:</span>
-          <div className="followusicon">
-            <a href="#" className="social-icon">
-              <InstagramIcon />
-            </a>
-            <a href="#" className="social-icon-facebook">
-              <FacebookIcon />
-            </a>
+        <div className="footer-section2">
+          <span className="section2header">contact us</span>
+          <div className="emailfooter">
+            <EmailIcon /> <span> - </span> mail us
           </div>
-          <span className="ownerfooter"> - Jad Rifaii</span>
-          <div className="followusicon">
-            <a href="#" className="social-icon">
-              <InstagramIcon />
-            </a>
-            <a href="#" className="social-icon-facebook">
-             <FacebookIcon />
-            </a>
+          <div className="mailinside">
+            <p>
+            <a href="mailto:jad.rami.rifaii19@gmail.com">jad.rami.rifaii19@gmail.com</a>              
+            </p>
+            <p>
+            <a href="mailto:rami.mustafa.rifaii@gmail.com">rami.mustafa.rifaii@gmail.com</a>
+              </p>
           </div>
-          <span className="ownerfooter"> - Rami Rifaii</span>
+          <div className="section2headerph">
+            <PhoneIcon /> <span> - </span> call us
+          </div>
+          <div className="mailinside">
+            <p>76 597610 - Jad Rifaii</p>
+            <p>70 701287 - Rami Rifaii</p>
+          </div>
         </div>
-      </div>
-    </footer>
+
+        <div className="footer-section3">
+          <span className="registerfooter">Register</span>
+          <p>
+            Don't forget to register for our training. Feel free to send a
+            message:
+          </p>
+          <div className="input-wrapper">
+            <input
+              type="text"
+              placeholder="Send a message"
+              className={`inputfooter ${sent ? "sent" : ""}`}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <button
+              className={`send-button ${sent ? "sent" : ""}`}
+              onClick={sendMessage}
+            >
+              {sent ? <FaCheck /> : <FaPaperPlane />}
+            </button>
+          </div>
+          <div className="followfooter">
+            <span className="">Follow us:</span>
+            <div className="followusicon">
+              <a href="https://instagram.com/jad._rifai_.19?igshid=OGQ5ZDc2ODk2ZA==" className="social-icon">
+                <InstagramIcon />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100008222161499&mibextid=LQQJ4d" className="social-icon-facebook">
+                <FacebookIcon />
+              </a>
+            </div>
+            <span className="ownerfooter"> - Jad Rifaii</span>
+            <div className="followusicon">
+              <a href="https://instagram.com/ping.rifaii.pong?igshid=MzRlODBiNWFlZA==" className="social-icon">
+                <InstagramIcon />
+              </a>
+              <a href="https://www.facebook.com/rami.rifaii.1?mibextid=ZbWKwL" className="social-icon-facebook">
+                <FacebookIcon />
+              </a>
+            </div>
+            <span className="ownerfooter"> - Rami Rifaii</span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
