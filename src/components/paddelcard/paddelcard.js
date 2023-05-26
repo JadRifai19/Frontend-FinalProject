@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './paddelcard.css';
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import BlackPaddle from '../../assets/blackpaddle.jpg';
-import RedPaddle from '../../assets/redpaddle.jpg';
-import OrangePaddle from '../../assets/orangepaddle.jpg';
-import BluePaddle from '../../assets/bluepaddle.jpg';
+import BlackPaddle from '../../assets/blackpaddel.webp';
+import RedPaddle from '../../assets/redpaddel.webp';
+import GreenPaddle from '../../assets/greenpaddel.webp';
+import BluePaddle from '../../assets/bluepaddel.webp';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 
@@ -22,7 +22,7 @@ export default function TablecardShopping() {
             <img src={activeImage} alt="Product Image" />
             <img className="image-slide-paddel" src={BlackPaddle} alt="Black Paddle" />
             <img className="image-slide-paddel" src={RedPaddle} alt="Red Paddle" />
-            <img className="image-slide-paddel" src={OrangePaddle} alt="Purple Paddle" />
+            <img className="image-slide-paddel" src={GreenPaddle} alt="Purple Paddle" />
             <img className="image-slide-paddel" src={BluePaddle} alt="Blue Paddle" />
           </div>
           <div className="details-table-paddel">
@@ -41,9 +41,9 @@ export default function TablecardShopping() {
               </button>
               <button
                 className="switch-paddle-button"
-                onClick={() => handleImageChange(OrangePaddle)}
+                onClick={() => handleImageChange(GreenPaddle)}
               >
-                <FiberManualRecordIcon style={{ color: "orange" ,fontSize: "18px" }} />
+                <FiberManualRecordIcon style={{ color: "rgb(12, 223, 12)" ,fontSize: "18px" }} />
               </button>
               <button
                 className="switch-paddle-button"

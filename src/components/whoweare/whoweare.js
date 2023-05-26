@@ -22,9 +22,6 @@ const FaqSection = () => {
       className="container-whoweare"
       aria-label="Frequently Asked Questions"
     >
-      <header className="faq__header">
-        <h2 className="faq__header-title">Frequently Asked Questions</h2>
-      </header>
       <div className="faq__body">
         <details
           aria-expanded={expandedPanels[0]}

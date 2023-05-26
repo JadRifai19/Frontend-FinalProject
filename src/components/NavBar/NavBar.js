@@ -20,6 +20,7 @@ function Navbar() {
       setDropdown(true);
     }
   };
+  
 
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
@@ -32,7 +33,7 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+        <Link to="/home" className="navbar-logo" onClick={closeMobileMenu}>
           <p className="title"> Ping Pong</p>
           <i className="fab fa-firstdraft" />
         </Link>
@@ -41,7 +42,7 @@ function Navbar() {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
@@ -75,7 +76,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
-              to="/contact-us"
+              to="/contactus"
               className="nav-links"
               onClick={closeMobileMenu}
             >
@@ -83,7 +84,7 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-        <Link to="sign-up">
+        <Link to="signup">
           <button className="btnnav">Sign Up</button>
         </Link>
         <div className="icons">

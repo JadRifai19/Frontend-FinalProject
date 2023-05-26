@@ -1,7 +1,7 @@
 export const MenuItems = [
     {
       title: 'Private Training',
-      path: '/pritraining',
+      path: '/privatetraining',
       cName: 'dropdown-link'
     },
     {

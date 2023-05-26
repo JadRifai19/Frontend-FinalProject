@@ -3,6 +3,7 @@ import './contactus.css';
 
 export default function contactus() {
   return (
+    <div className="sign-up-form-photo">
     <div className="contact-container">
       <h1>Contact Us</h1>
       <form>
@@ -25,6 +26,7 @@ export default function contactus() {
           Send Message
         </button>
       </form>
+    </div>
     </div>
   )
 }

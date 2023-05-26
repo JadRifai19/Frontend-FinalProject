@@ -15,7 +15,7 @@ export default function CardShopping() {
 
   return (
     <div>
-      <div className="card">
+      <div className="card-shopping-card">
         <div className="image-container">
           {images.map((image, index) => (
             <img

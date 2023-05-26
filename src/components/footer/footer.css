@@ -4,7 +4,6 @@
   min-height: 380px;
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
 }
 
 .titlefooter {
@@ -14,7 +13,7 @@
   display: flex;
   font-size: 53px;
   margin-top: 23px;
-  margin-left: -47px;
+  margin-left: -15px;
 }
 
 .locationfooter {
@@ -34,7 +33,7 @@
 }
 
 .footerdescription {
-  max-width: 300px;
+  max-width: 400px;
   margin-top: 25px;
   margin-left: 60px;
 }

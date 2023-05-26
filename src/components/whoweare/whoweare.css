@@ -3,24 +3,28 @@
     margin: auto;
     padding: 70px 12px;
   }
-  
-  .faq__header-title {
-    font-size: clamp(22px, 4vw, 35px);
-    color: black;
-    margin-top: 50px;
+
+  .container-whoweare{
+    margin-left: 350px;
   }
   
+
   .faq__panel {
     margin-bottom: 24px;
     border: 1px solid #777e91;
     border-radius: 8px;
   }
+
   
   .faq__label {
     margin-left: 10px;
     padding: 10px 20px;
     cursor: pointer;
     outline: none;
+  }
+  
+  .faq__label.expanded {
+    color: blue;
   }
   
   .faq__label:hover {

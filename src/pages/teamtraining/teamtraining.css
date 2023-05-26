@@ -132,14 +132,17 @@
     width:80%
  }
  
-
  .container-team-training {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: -20px;
 }
+
 
 .about-team-training,
 .mission {
@@ -154,10 +157,10 @@
   flex: 1;
   padding: 20px;
 }
-p
+
 .title-team-training {
-  font-size: 54px;
-  margin-top: -190px;
+  font-size: 45px;
+  margin-top: 0px;
 }
 
 .description-team-training {

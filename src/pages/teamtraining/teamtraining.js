@@ -1,7 +1,8 @@
 import React from "react";
 import "./teamtraining.css";
 import ramiImageSrc from "../../assets/image2.jpeg";
-import jadImageSrc from "../../assets/image1.jpeg";
+import jadImageSrc from "../../assets/ShopBall.webp";
+
 import player1ImageSrc from "../../assets/orangeball.jpeg";
 import player2ImageSrc from "../../assets/orangeball.jpeg";
 import player3ImageSrc from "../../assets/orangeball.jpeg";

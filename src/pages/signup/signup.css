@@ -1,20 +1,35 @@
+.sign-up-form-photo {
+  background: url("../../assets/ShopBall.webp") center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .form {
   background: #242222;
   padding: 40px;
   max-width: 600px;
-  margin: 40px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
+
+.card {
+  background: #242222;
+  padding: 40px;
+  max-width: 600px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
 
 .tab-group {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
   list-style: none;
-  
 }
-
 
 .tab-group button {
   flex: 1;
@@ -29,16 +44,14 @@
   box-sizing: border-box;
 }
 
-.tab-group button:first-child {
-  background: red;
-  color: #ffffff;
-  text-align: center;
-}
-
+.tab-group button:first-child,
 .tab-group button:last-child {
   background: red;
   color: #ffffff;
   text-align: center;
+  width: 250px;
+  margin-left: 10px;
+  margin-right: 2px;
 }
 
 .tab-group button:hover,
@@ -47,41 +60,10 @@
   color: #ffffff;
 }
 
-.tab-group button:first-child,
-.tab-group button:last-child {
-  width: 250px;
-  margin-left: 10px;
-  margin-right: 2px;
-}
-
 .tab-group:after {
   content: "";
   display: table;
   clear: both;
-}
-
-.tab-group li a {
-  display: block;
-  text-decoration: none;
-  padding: 15px;
-  background: #242222;
-  color: #a0b3b0;
-  font-size: 20px;
-  float: left;
-  width: 50%;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
-
-.tab-group li a:hover {
-  background: red;
-  color: #ffffff;
-}
-
-.tab-group .active a {
-  background: red;
-  color: #ffffff;
 }
 
 .tab-content > div:last-child {
@@ -121,8 +103,7 @@ textarea {
   font-size: 22px;
   display: block;
   width: 100%;
-  height: 100%;
-  padding: 5px 10px;
+  padding: 10px;
   background: none;
   background-image: none;
   border: 1px solid #a0b3b0;
@@ -144,7 +125,7 @@ textarea {
 
 .field-wrap {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .top-row:after {
@@ -155,12 +136,12 @@ textarea {
 
 .top-row > div {
   float: left;
-  width: 48%;
-  margin-right: 4%;
+  width:100%;
+  margin-right: 2%;
 }
 
 .top-row > div:last-child {
-  margin: 0;
+  margin-right: 0;
 }
 
 .button {
@@ -193,6 +174,6 @@ textarea {
   text-align: right;
 }
 
-.button-block:hover{
-  background-color: #242222;;
+.button-block:hover {
+  background-color: #242222;
 }

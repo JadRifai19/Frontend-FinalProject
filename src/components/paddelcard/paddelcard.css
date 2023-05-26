@@ -9,6 +9,7 @@
     position: relative;
     perspective: 800px;
     transition: transform 0.5s;
+    margin-bottom: 80px;
   }
   
   .tablecard-paddel:hover {

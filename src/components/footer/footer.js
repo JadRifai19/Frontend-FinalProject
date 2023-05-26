@@ -44,9 +44,9 @@ export default function Footer() {
           </span>
           <p className="locationdaher">Daher Al Ein</p>
           <p className="footerdescription">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit
-            asperiores autem commodi fugit blanditiis, voluptatibus ipsa repellat
-            n
+            Explore the exciting world of Ping Pong with the Rifai family. Join
+            us as we share our passion for the game and provide valuable
+            insights, tips, and training resources.
           </p>
         </div>
 
@@ -57,11 +57,15 @@ export default function Footer() {
           </div>
           <div className="mailinside">
             <p>
-            <a href="mailto:jad.rami.rifaii19@gmail.com">jad.rami.rifaii19@gmail.com</a>              
+              <a href="mailto:jad.rami.rifaii19@gmail.com">
+                jad.rami.rifaii19@gmail.com
+              </a>
             </p>
             <p>
-            <a href="mailto:rami.mustafa.rifaii@gmail.com">rami.mustafa.rifaii@gmail.com</a>
-              </p>
+              <a href="mailto:rami.mustafa.rifaii@gmail.com">
+                rami.mustafa.rifaii@gmail.com
+              </a>
+            </p>
           </div>
           <div className="section2headerph">
             <PhoneIcon /> <span> - </span> call us
@@ -96,19 +100,31 @@ export default function Footer() {
           <div className="followfooter">
             <span className="">Follow us:</span>
             <div className="followusicon">
-              <a href="https://instagram.com/jad._rifai_.19?igshid=OGQ5ZDc2ODk2ZA==" className="social-icon">
+              <a
+                href="https://instagram.com/jad._rifai_.19?igshid=OGQ5ZDc2ODk2ZA=="
+                className="social-icon"
+              >
                 <InstagramIcon />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=100008222161499&mibextid=LQQJ4d" className="social-icon-facebook">
+              <a
+                href="https://www.facebook.com/profile.php?id=100008222161499&mibextid=LQQJ4d"
+                className="social-icon-facebook"
+              >
                 <FacebookIcon />
               </a>
             </div>
             <span className="ownerfooter"> - Jad Rifaii</span>
             <div className="followusicon">
-              <a href="https://instagram.com/ping.rifaii.pong?igshid=MzRlODBiNWFlZA==" className="social-icon">
+              <a
+                href="https://instagram.com/ping.rifaii.pong?igshid=MzRlODBiNWFlZA=="
+                className="social-icon"
+              >
                 <InstagramIcon />
               </a>
-              <a href="https://www.facebook.com/rami.rifaii.1?mibextid=ZbWKwL" className="social-icon-facebook">
+              <a
+                href="https://www.facebook.com/rami.rifaii.1?mibextid=ZbWKwL"
+                className="social-icon-facebook"
+              >
                 <FacebookIcon />
               </a>
             </div>
