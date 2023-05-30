@@ -17,6 +17,13 @@
     transform: scale(1.05);
   }
 
+  .shopping-cart-prodcy-three{
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+    flex-direction: row;
+  }
+
   
 
 .image-container {

@@ -17,7 +17,7 @@ const style = {
   p: 4,
 };
 
-const BasicModal = () => {
+const BasicModal = ({ color, day, time, handleClick }) => {
   const [open, setOpen] = useState(false);
   const [status, setStatus] = useState('');
 
@@ -25,26 +25,32 @@ const BasicModal = () => {
   const handleClose = () => setOpen(false);
 
   const handleColorClick = (color) => {
-    switch (color) {
-      case 'green':
-        setStatus('available');
-        break;
-      case 'red':
-        setStatus('unavailable');
-        break;
-      case 'black':
-        setStatus('equipped');
-        break;
-      default:
-        setStatus('');
-        break;
-    }
+    setStatus(status === color ? '' : color);
   };
+
+  const handleSessionClick = () => {
+    handleClick(day, time);
+    handleClose();
+  };
+
+  let word = '';
+  let wordColor = '';
+
+  if (status === 'available') {
+    word = 'Available';
+    wordColor = 'green';
+  } else if (status === 'equipped') {
+    word = 'Equipped';
+    wordColor = 'blue';
+  } else if (status === 'unavailable') {
+    word = 'Unavailable';
+    wordColor = 'red';
+  }
 
   return (
     <div>
-      <Button className="buttontraining33" onClick={handleOpen}>
-        Status
+      <Button className={`buttontraining33 ${color}`} onClick={handleOpen}>
+        &nbsp;
       </Button>
       <Modal
         open={open}
@@ -60,14 +66,22 @@ const BasicModal = () => {
             Modal Content
           </Typography>
           <div className="color-word">
-            <div className="color-circle green" onClick={() => handleColorClick('green')}></div>
-            <div className="color-circle red" onClick={() => handleColorClick('red')}></div>
-            <div className="color-circle black" onClick={() => handleColorClick('black')}></div>
+            <div
+              className={`color-circle green ${status === 'available' ? 'selected' : ''}`}
+              onClick={() => handleColorClick('available')}
+            ></div>
+            <div
+              className={`color-circle red ${status === 'unavailable' ? 'selected' : ''}`}
+              onClick={() => handleColorClick('unavailable')}
+            ></div>
+            <div
+              className={`color-circle blue ${status === 'equipped' ? 'selected' : ''}`}
+              onClick={() => handleColorClick('equipped')}
+            ></div>
           </div>
           <Typography variant="body1" sx={{ mt: 2 }}>
-            {status === 'available' && 'Available'}
-            {status === 'unavailable' && 'Unavailable'}
-            {status === 'equipped' && 'Equipped'}
+            <div className={`color-circle ${wordColor}`} />
+            {word}
           </Typography>
         </Box>
       </Modal>

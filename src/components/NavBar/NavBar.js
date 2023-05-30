@@ -1,15 +1,18 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./NavBar.css";
 import Dropdown from "../dropdown/dropdown.js";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
+import ShoppingCart from "../shoppingcart/shoppingcart.js";
 
-function Navbar() {
+function Navbar({ cartItems, removeFromCart }) {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
-
+  const [showCart, setShowCart] = useState(false);
+  const navigate = useNavigate()
+  
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -20,7 +23,6 @@ function Navbar() {
       setDropdown(true);
     }
   };
-  
 
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
@@ -30,11 +32,31 @@ function Navbar() {
     }
   };
 
+  const toggleCart = () => {
+    if(showCart){
+      navigate("?cart=open")
+    }else{
+      navigate("?cart=close")
+      
+    }
+    setShowCart(!showCart);
+    
+    console.log(showCart)
+    setClick(false);
+  };
+
+  const closeShoppingCart = () => {
+    setShowCart(false);
+  };
+  // useEffect(()=>{
+
+  // },[showCart])
+
   return (
     <>
       <nav className="navbar">
-        <Link to="/home" className="navbar-logo" onClick={closeMobileMenu}>
-          <p className="title"> Ping Pong</p>
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <p className="title">Ping Pong</p>
           <i className="fab fa-firstdraft" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
@@ -42,7 +64,7 @@ function Navbar() {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
@@ -84,7 +106,7 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-        <Link to="signup">
+        <Link to="/signup">
           <button className="btnnav">Sign Up</button>
         </Link>
         <div className="icons">
@@ -92,7 +114,9 @@ function Navbar() {
             <PermIdentityIcon />
           </ul>
           <ul className="nav-icon">
-            <AddShoppingCartIcon />
+            <button onClick={toggleCart} className="test">
+              <AddShoppingCartIcon />
+            </button>
           </ul>
           <ul className="nav-icon">
             <li className="search">
@@ -108,6 +132,10 @@ function Navbar() {
             </li>
           </ul>
         </div>
+        {cartItems && cartItems.length > 0 && (
+          <div className="cart-counter">{cartItems.length}</div>
+        )}
+       
       </nav>
     </>
   );

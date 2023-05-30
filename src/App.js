@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar/NavBar.js";
 import "./App.css";
@@ -9,18 +9,23 @@ import SignUp from './pages/signup/signup.js';
 import TeamTraining from './pages/teamtraining/teamtraining.js';
 import PrivateTraining from './pages/privatetraining/privatetraining.js';
 import ContactUs from './pages/contactus/contactus.js';
+import ShoppingCart from './components/shoppingcart/shoppingcart';
+import Training from "./pages/training/training.js";
 
 function App() {
+  const [shoppingcart, setshoppingcart] = useState([]);
+
   return (
     <Router>
-      <Navbar />
+      <Navbar shoppingcart={shoppingcart} />
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/shopping" element={<Shopping />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/shopping" element={<Shopping shoppingcart={ShoppingCart} />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/teamtraining" element={<TeamTraining />} />
         <Route path="/privatetraining" element={<PrivateTraining />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path='/training' element={<Training />} />
       </Routes>
       <Footer />
     </Router>

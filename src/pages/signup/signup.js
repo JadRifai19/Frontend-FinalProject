@@ -48,6 +48,7 @@ const SignUpForm = () => {
         registerForm
       );
       console.log(response)
+      navigate('/')
     } catch (e) {
       console.log(e)
     }
@@ -66,7 +67,7 @@ const SignUpForm = () => {
       );
 
       console.log(response)
-      navigate('/home')
+      navigate('/')
     } catch (e) {
       console.log(e)
     }

@@ -15,8 +15,22 @@
   object-fit: cover;
 }
 
+.question-paddel-section{
+  margin-left: 560px;
+}
+
+.title-homepage-product{
+  font-size: 35px;
+}
+
+.shopping-products-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 120px; 
+}
+
+
 .cardshopping {
-  
   display: flex;
   flex-wrap: wrap;
   gap: 70px;

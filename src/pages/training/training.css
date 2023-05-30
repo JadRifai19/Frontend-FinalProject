@@ -1,0 +1,24 @@
+.training-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .training-buttons-notfound {
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .training-buttons-notfound:hover {
+    background-color: #242222;
+  }
+  
+  .training-button {
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+  }
+  

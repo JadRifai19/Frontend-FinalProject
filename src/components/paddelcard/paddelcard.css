@@ -21,21 +21,19 @@
     height: 60%;
     position: relative;
     overflow: hidden;
-    transform-style: preserve-3d;
     transition: transform 0.5s;
   }
   
   .image-container-table-paddel img {
-    width: 100%;
+    width: 80%;
     height: 100%;
+    margin-left: 30px;
     object-fit: cover;
-    opacity: 0;
-    transform: translateX(-100%);
     transition: opacity 0.5s, transform 0.5s;
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: -70px;
+  
   }
   
   .image-slide-paddel {

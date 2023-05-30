@@ -21,6 +21,7 @@
     margin: 0 10px;
     cursor: pointer;
   }
+
   
   .color-circle.green {
     background-color: green;
@@ -30,7 +31,8 @@
     background-color: red;
   }
   
-  .color-circle.black {
-    background-color: black;
+  .color-circle.blue {
+    background-color: blue;
   }
+  
   
