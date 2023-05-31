@@ -44,7 +44,7 @@ const SignUpForm = () => {
  
     try {
       const response = await axios.post(
-        "http://localhost:5000/User/users",
+        "https://pingpong-backend-6vtc.onrender.com/User/users",
         registerForm
       );
       console.log(response)
@@ -62,7 +62,7 @@ const SignUpForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/User/users/login",
+        "https://pingpong-backend-6vtc.onrender.com/User/users/login",
         loginform
       );
 

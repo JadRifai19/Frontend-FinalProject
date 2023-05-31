@@ -9,7 +9,7 @@ export default function TablecardShopping({ productId, addToCart }) {
   useEffect(() => {
     const fetchProductData = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/product/${productId}`);
+        const response = await axios.get(`https://pingpong-backend-6vtc.onrender.com/product/${productId}`);
         setProductData(response.data);
       } catch (error) {
         console.error('Error fetching product data:', error);
@@ -24,7 +24,7 @@ export default function TablecardShopping({ productId, addToCart }) {
       <div className="image-container-table">
         <img
           className="image-product-table"
-          src={`http://localhost:5000/${productData?.image}`}
+          src={`https://pingpong-backend-6vtc.onrender.com/${productData?.image}`}
           alt="Product Image"
         />
       </div>

@@ -37,7 +37,7 @@ export default function Footer() {
         <ToastContainer />
 
         <div className="footer-section1">
-          <p className="titlefooter">Ping Pong</p>
+          <p className="titlefooter">Spin Master</p>
 
           <span className="locationfooter">
             <LocationOnIcon /> <span> - </span> Find us{" "}

@@ -1,7 +1,7 @@
 .carousel {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 800px;
     overflow: hidden;
   }
   
@@ -14,11 +14,34 @@
     flex: 0 0 100%;
   }
   
+  .carousel-text {
+    position: absolute;
+    top: 20%;
+    color: #fff;
+    z-index: 1;
+    left: 3%;
+  }
+  
+  .carousel-text-title {
+    font-size: 60px;
+    font-weight: bold;
+    max-width: 40%;
+    margin-top: 3%;
+  }
+  
+  .carousel-text-description {
+    font-size: 40px;
+    margin-top: 4%;
+    color: #bbb;
+    max-width: 40%;
+  }
+
   .carousel-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+  
   
   .carousel-button {
     position: absolute;

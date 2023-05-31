@@ -56,7 +56,7 @@ function Navbar({ cartItems, removeFromCart }) {
     <>
       <nav className="navbar">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <p className="title">Ping Pong</p>
+          <p className="title">Spin Master</p>
           <i className="fab fa-firstdraft" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
@@ -74,7 +74,7 @@ function Navbar({ cartItems, removeFromCart }) {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to="/training"
+              to="/teamtraining"
               className="nav-links"
               onClick={closeMobileMenu}
             >

@@ -1,16 +1,24 @@
 import React from "react";
 import "./home.css";
 import Carousel from "../../components/carousal/carousal.js";
-import Profile from "../../assets/profilepic.jpg";
 import WhoWeAre from "../../components/whoweare/whoweare";
 import { Link } from "react-router-dom";
 import ShopPaddle from "../../assets/paddlehome.webp";
 import ShopTable from "../../assets/tableshop.webp";
 import ShopBall from "../../assets/ShopBall.webp";
-import Rifai from "../../assets/rifai.jpg";
+import hani from "../../assets/hani.jpg";
+import jad from "../../assets/jad.jpeg";
+import rami from "../../assets/rami.jpeg";
+import family from "../../assets/family.jpeg";
+import PingPongweb from "../../assets/pingpongweb.webp";
+import alaa from "../../assets/alaa.jpeg";
+import rami2 from "../../assets/rami2.jpeg";
+import alaa2 from "../../assets/alaa2.jpeg";
+import jad2 from "../../assets/jad2.jpeg";
+import hani2 from "../../assets/hani2.jpeg";
 
 export default function Home() {
-  const slides = [ShopTable, Rifai];
+  const slides = [ShopBall, PingPongweb];
 
   return (
     <div className="home">
@@ -32,16 +40,16 @@ export default function Home() {
           </div>
           <div className="card-home-page-coaches-inner">
             <div className="card-home-page-coaches-front">
-              <img src={ShopTable} alt="Image 1" />
+              <img src={rami} alt="Image 1" />
             </div>
             <div className="card-home-page-coaches-back">
               <div className="homeprofpic">
-                <img src={Profile} alt="profile pic" />{" "}
+                <img src={rami2} alt="profile pic" />{" "}
               </div>
               <p className="descriptionofcoach">
-                Lebanon champion in 2018. Played for several club like : Riyadi
-                and Asad and homumetmen at 1st devision. Riyada Wel Adab in 2nd
-                devision. Coach for Qnat Team. Ping Pong coach at OEA. <br /> 
+                Lebanon champion in 2017. President of North Governorate
+                Committee. Played for several club like : Riyadi and Asad and
+                homumetmen at 1st devision. Ping Pong coach at OEA. <br />
                 titles : 36 title
               </p>
               <Link to="/teamtraining" className="buttonhome">
@@ -62,16 +70,16 @@ export default function Home() {
           </div>
           <div className="card-home-page-coaches-inner">
             <div className="card-home-page-coaches-front">
-              <img src={ShopBall} alt="Image 2" />
+              <img src={jad2} alt="Image 2" />
             </div>
             <div className="card-home-page-coaches-back">
               <div className="homeprofpic">
-                <img src={Profile} alt="profile pic" />{" "}
+                <img src={jad} alt="profile pic" />{" "}
               </div>
               <p className="descriptionofcoach">
-                Currently playing at Qnat team. North champions 1st place for 5 years in a row.
-                ping pong coach at Iman school and at OEA for more than 2 years. private coach
-                3rd in lebanon in 2017. <br />
+                Currently playing at Qnat team. North champions 1st place for 5
+                years in a row. ping pong coach at Iman school and at OEA for
+                more than 2 years. private coach 3rd in lebanon in 2017. <br />
                 titles : 28 title
               </p>
               <Link to="/teamtraining" className="buttonhome">
@@ -92,11 +100,11 @@ export default function Home() {
           </div>
           <div className="card-home-page-coaches-inner">
             <div className="card-home-page-coaches-front">
-              <img src={ShopTable} alt="Image 1" />
+              <img src={alaa} alt="Image 1" />
             </div>
             <div className="card-home-page-coaches-back">
               <div className="homeprofpic">
-                <img src={Profile} alt="profile pic" />{" "}
+                <img src={alaa2} alt="profile pic" />{" "}
               </div>
               <p className="descriptionofcoach">
                 Ping Pong Player for Dar El Nour. North champions for 8 times.
@@ -122,16 +130,17 @@ export default function Home() {
           </div>
           <div className="card-home-page-coaches-inner">
             <div className="card-home-page-coaches-front">
-              <img src={ShopTable} alt="Image 1" />
+              <img src={hani} alt="Image 1" />
             </div>
             <div className="card-home-page-coaches-back">
               <div className="homeprofpic">
-                <img src={Profile} alt="profile pic" />{" "}
+                <img src={hani2} alt="profile pic" />{" "}
               </div>
               <p className="descriptionofcoach">
                 Ping Pong Player for Dar El Nour. North champions for 9 times.
-                played in 1st Division for Riyadi and Dar El Nour and Asad. private ping
-                pong coach for 6 years. second in North according to ... <br />
+                played in 1st Division for Riyadi and Dar El Nour and Asad.
+                private ping pong coach for 6 years. second in North according
+                to ... <br />
                 titles : 45 title
               </p>
               <Link to="/teamtraining" className="buttonhome">
@@ -195,7 +204,9 @@ export default function Home() {
       </div>
       <div className="champions">
         <div className="champions-image">
-          <img src={ShopTable} alt="Champions" />
+          <div className="hhhhhhhhhhhhhh">
+            <img src={family} alt="Champions" />
+          </div>
           <div className="champions-description">
             <h2 className="champions-description-header">
               "Champions no matter your age or gender..."
