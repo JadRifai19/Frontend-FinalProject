@@ -58,14 +58,14 @@ const Shopping = () => {
           </p>
         </div>
       </div>
-      <p className="title-homepage">Take a look at the balls</p>
+      <p className="title-homepage-shopping">Take a look at the balls</p>
       <div className="cardshopping">
         <Card addToCart={addToCart} />
         <Card addToCart={addToCart} />
         <BallCard addToCart={addToCart} />
         <BallCard addToCart={addToCart} />
       </div>
-      <p className="title-homepage">Take a look at the tables</p>
+      <p className="title-homepage-shopping">Take a look at the tables</p>
       <div className="cardshopping">
         {tableProducts.map((product) => (
           <TableCard
@@ -75,7 +75,7 @@ const Shopping = () => {
           />
         ))}
       </div>
-      <p className="title-homepage">Take a look at the paddles</p>
+      <p className="title-homepage-shopping">Take a look at the paddles</p>
       <div className="cardshopping">
         <PaddleCard addToCart={addToCart} />
         <PaddleCard addToCart={addToCart} />
@@ -84,7 +84,7 @@ const Shopping = () => {
       </div>
       <div>
         <div className="question-paddel-section">
-          <h2 className="title-homepage-product">
+          <h2 className="title-homepage-shopping-product">
             WHICH PING PONG PADDLE IS RIGHT FOR ME?
           </h2>
         </div>

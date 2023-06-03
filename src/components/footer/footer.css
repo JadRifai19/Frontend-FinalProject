@@ -114,6 +114,27 @@
   transition: border-color 0.3s ease;
 }
 
+
+.footer-section2 {
+  margin-top: 40px;
+}
+
+.footer-section3 {
+  margin-top: 40px;
+}
+
+.social-icon-facebook {
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 7px;
+}
+
+.social-icon-facebook:hover {
+  color: blue;
+  transition: 0.7s;
+}
+
+
 .send-button {
   position: absolute;
   color: #fff;
@@ -151,11 +172,14 @@
     align-items: center;
   }
 
+  .section2header {
+    margin-left: -45px;
+  }
+
   .titlefooter {
-    margin-left: 0;
+    margin-left: 125px;
     margin-top: 10px;
     font-size: 36px;
-    text-align: center;
   }
 
   .footer-section {
@@ -163,25 +187,53 @@
     margin-bottom: 20px;
   }
 
-  .locationfooter,
+  .locationfooter {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 26px;
+  }
+
   .emailfooter,
   .section2headerph {
     justify-content: center;
   }
 
   .locationdaher {
-    margin-left: 0;
-    margin-top: 10px;
-    text-align: center;
+    margin-left: 45px;
+    margin-top: 20px;
   }
 
   .footerdescription {
-    margin-left: 0;
+    margin: 20px;
     text-align: center;
   }
 
   .followfooter {
+    position: relative;
     text-align: center;
+  }
+  .registerfooter{
+    margin-left: 35px;
+    font-size: 30px;
+  }
+  .followus-footer{
+    margin-left: 200px;
+    font-size: 20px;
+    }
+
+  .followusicon{
+    margin-left: 250px;
+    margin-bottom: 10px;
+    font-size: 1px; 
+  }
+  .input-wrapper{
+    margin-left: 25px;
+  }
+  .ownerfooter{
+    margin-left: 330px;
+  } 
+  .carousial-text-title{
+    font-size: 20px;
   }
 }
 
@@ -202,23 +254,4 @@
   .followusicon .MuiSvgIcon-root {
     margin-right: 3px;
   }
-}
-
-.footer-section2 {
-  margin-top: 40px;
-}
-
-.footer-section3 {
-  margin-top: 40px;
-}
-
-.social-icon-facebook {
-  color: #fff;
-  margin-top: 20px;
-  margin-left: 7px;
-}
-
-.social-icon-facebook:hover {
-  color: blue;
-  transition: 0.7s;
 }

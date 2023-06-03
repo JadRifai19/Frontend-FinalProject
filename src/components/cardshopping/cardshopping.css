@@ -154,3 +154,15 @@
     background-color: black;
     transform: scale(0.95);
   }
+
+  @media (max-width: 768px) {
+    .cardshopping {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1500px;
+      justify-content: center;
+      margin: 0 auto;
+  }
+    
+  }

@@ -24,7 +24,11 @@
 @media (max-width: 768px) {
   .who-we-are {
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
+    margin-left: 5.5%;
+    width: 90%;
+    margin-top: -30%;
+    margin-bottom: -5%;
   }
 
   .card-home-page-coaches {
@@ -62,10 +66,22 @@
   height: 15vh;
   margin-left: -25px;
 }
+.centered-heading-frequency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  margin-left: -25px;
+}
 
 .title-homepage {
   font-size: 50px;
   margin-top: 60px;
+}
+
+.title-homepage-questions-home {
+  font-size: 50px;
+  margin-top: 95px;
 }
 
 .champions {
@@ -386,8 +402,53 @@ p {
   .shop-now-images {
     flex-direction: column;
   }
-
+  .image-small1{
+    width: 100%;
+    height: 270px;
+  }
+  .image-small2{
+    width: 100%;
+    height: 270px;
+  }
+  .image-large{
+    width: 100%;
+    height: 270px;
+  }
+  .image-description{
+    width: 70%;
+    font-size: 15px;
+    margin-left: -40px;
+  }
+  .shop-now-link{
+    margin-top: 200px;
+  }
+  .champions-image-three-family{
+    width: 100%;
+  }
+  .champions-description-header{
+    width: 130%;
+    margin-top: -25%;
+    font-size: 30px;
+    margin-left: -25px;
+    color: white;
+  }
+  .champions-description-underheader{
+    width: 150%;
+    font-size: 15px;
+    margin-left: -45px;
+  }
   .image-wrapper-home-page-section2 {
     width: 100%;
+  }
+  .title-homepage{
+    margin-top: -190px;
+  }
+  .centered-heading-frequency{
+    font-size: 30px;
+  }
+  .title-homepage-questions-home{
+    margin-top:140px;
+    margin-left: 48px
+
   }
 }

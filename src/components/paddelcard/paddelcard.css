@@ -148,4 +148,11 @@
 
 
   
-  
+  @media (max-width: 768px) {
+    .tablecard-paddel{
+      height: 400px
+    }
+    .fixed-asli{
+      height: 410px;
+    }
+  }

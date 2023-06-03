@@ -18,7 +18,7 @@ const FaqSection = () => {
   };
 
   return (
-    <section
+    <div
       className="container-paddel-question"
       aria-label="Frequently Asked Questions"
     >
@@ -97,7 +97,7 @@ const FaqSection = () => {
           </div>
         </details>
       </div>
-    </section>
+    </div>
   );
 };
 

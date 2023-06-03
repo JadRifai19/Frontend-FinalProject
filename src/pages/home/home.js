@@ -151,8 +151,8 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <div className="centered-heading">
-          <h2 className="title-homepage">Frequenctly questions asked</h2>
+        <div className="centered-heading-frequency">
+           <h2 className="title-homepage-questions-home">Frequenctly questions asked</h2>
         </div>
         <div className="whoweare-home">
           <WhoWeAre />
@@ -204,7 +204,7 @@ export default function Home() {
       </div>
       <div className="champions">
         <div className="champions-image">
-          <div className="hhhhhhhhhhhhhh">
+          <div className="champions-image-three-family">
             <img src={family} alt="Champions" />
           </div>
           <div className="champions-description">

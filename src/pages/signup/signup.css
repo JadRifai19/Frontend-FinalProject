@@ -23,7 +23,6 @@
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
-
 .tab-group {
   display: flex;
   justify-content: center;
@@ -136,7 +135,7 @@ textarea {
 
 .top-row > div {
   float: left;
-  width:100%;
+  width: 100%;
   margin-right: 2%;
 }
 
@@ -176,4 +175,38 @@ textarea {
 
 .button-block:hover {
   background-color: #242222;
+}
+
+@media (max-width: 768px) {
+  .form {
+    padding: 20px;
+    max-width: 400px;
+  }
+
+  .tab-group button:first-child,
+  .tab-group button:last-child {
+    width: 100%;
+    margin: 20px;
+  }
+  .tab-group {
+    margin-left: -70px;
+    }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  label {
+    font-size: 15px;
+  }
+
+  input,
+  textarea {
+    font-size: 15px;
+    width: 285px;
+  }
+
+  .button {
+    font-size: 1.3rem;
+  }
 }

@@ -29,7 +29,7 @@ export default function PaddlecardShopping({ addToCart }) {
   };
 
   return (
-    <div>
+    <div className='fixed-asli'>
       <div className="tablecard-paddel">
         <div className="image-container-table-paddel">
           <img src={activeImage} alt="Product Image" />

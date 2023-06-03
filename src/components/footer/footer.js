@@ -78,7 +78,7 @@ export default function Footer() {
 
         <div className="footer-section3">
           <span className="registerfooter">Register</span>
-          <p>
+          <p className="desription-register-footer">
             Don't forget to register for our training. Feel free to send a
             message:
           </p>
@@ -98,7 +98,7 @@ export default function Footer() {
             </button>
           </div>
           <div className="followfooter">
-            <span className="">Follow us:</span>
+            <span className="followus-footer">Follow us:</span>
             <div className="followusicon">
               <a
                 href="https://instagram.com/jad._rifai_.19?igshid=OGQ5ZDc2ODk2ZA=="

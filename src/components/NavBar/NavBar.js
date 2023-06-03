@@ -5,17 +5,25 @@ import Dropdown from "../dropdown/dropdown.js";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 import ShoppingCart from "../shoppingcart/shoppingcart.js";
 
 function Navbar({ cartItems, removeFromCart }) {
+  // State variables
+  const [menuOpen, setMenuOpen] = useState(false);
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [showCart, setShowCart] = useState(false);
-  const navigate = useNavigate()
-  
+  const navigate = useNavigate();
+
+  // Toggle click event for mobile menu
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+
+  // Handle mouse enter and leave events for dropdown
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -32,37 +40,56 @@ function Navbar({ cartItems, removeFromCart }) {
     }
   };
 
+  // Toggle shopping cart visibility
   const toggleCart = () => {
-    if(showCart){
-      navigate("?cart=open")
-    }else{
-      navigate("?cart=close")
-      
+    if (showCart) {
+      navigate("?cart=open");
+    } else {
+      navigate("?cart=close");
     }
     setShowCart(!showCart);
-    
-    console.log(showCart)
     setClick(false);
   };
 
+  // Close shopping cart
   const closeShoppingCart = () => {
     setShowCart(false);
   };
-  // useEffect(()=>{
 
-  // },[showCart])
-
+  const handleToggle = () => {
+    if (window.innerWidth >= 960) {
+      setMenuOpen(false);
+    } else {
+      setMenuOpen((prevOpen) => !prevOpen);
+    }
+    setClick(false);
+  };
+  
+  
   return (
     <>
       <nav className="navbar">
+        {/* Logo */}
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <p className="title">Spin Master</p>
           <i className="fab fa-firstdraft" />
         </Link>
-        <div className="menu-icon" onClick={handleClick}>
+        <FontAwesomeIcon
+          className="toggleMenuBar"
+          icon={faBars}
+          onClick={handleToggle}
+        />
+
+        {/* Mobile menu icon */}
+        {/* <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
+        </div> */}
+        <div className="menu-icon" onClick={handleToggle}>
+          <i className={menuOpen ? "fas fa-times" : "fas fa-bars"} />
         </div>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
+
+        {/* Navigation menu */}
+        <ul className={menuOpen ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
               Home
@@ -106,9 +133,13 @@ function Navbar({ cartItems, removeFromCart }) {
             </Link>
           </li>
         </ul>
+
+        {/* Sign Up button */}
         <Link to="/signup">
           <button className="btnnav">Sign Up</button>
         </Link>
+
+        {/* Icons */}
         <div className="icons">
           <ul className="nav-icon">
             <PermIdentityIcon />
@@ -118,24 +149,12 @@ function Navbar({ cartItems, removeFromCart }) {
               <AddShoppingCartIcon />
             </button>
           </ul>
-          <ul className="nav-icon">
-            <li className="search">
-              <SearchIcon />
-              <input
-                className="search__input"
-                type="text"
-                placeholder="Search"
-              />
-              <button className="search__button">
-                <i className="fas fa-search" />
-              </button>
-            </li>
-          </ul>
         </div>
+
+        {/* Cart counter */}
         {cartItems && cartItems.length > 0 && (
           <div className="cart-counter">{cartItems.length}</div>
         )}
-       
       </nav>
     </>
   );

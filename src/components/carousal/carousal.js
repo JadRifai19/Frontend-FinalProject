@@ -31,8 +31,7 @@ const Carousel = ({ images }) => {
                   "Welcome to the Ping Pong Paradise"
                 </h2>
                 <p className="carousel-text-description">
-                  "Discover Premium Products and Embark on an Unforgettable
-                  Journey through our Training Sessions."
+                  "Discover Premium Products and Embark on an Unforgettable Journey through our Training Sessions."
                 </p>
               </div>
             )}

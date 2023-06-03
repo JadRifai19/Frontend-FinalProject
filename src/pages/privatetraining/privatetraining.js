@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./privatetraining.css";
-import ramiImageSrc from "../../assets/orangeball.jpeg";
-import jadImageSrc from "../../assets/whiteball.jpeg";
-import BasicModal from "../../components/modal/BasicModal";
+import ramiImageSrc from "../../assets/rami.jpeg";
+import jadImageSrc from "../../assets/jad.jpeg";
 
 const TeamTraining = () => {
   const days = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
@@ -11,6 +10,7 @@ const TeamTraining = () => {
     { day: "Monday", time: "09:00" },
     { day: "Wednesday", time: "18:00" },
     { day: "Saturday", time: "18:00" },
+    { day: "Sunday", time: "12:00"}
   ];
 
   const jadTrainingSchedule = [
@@ -45,39 +45,67 @@ const TeamTraining = () => {
       );
     };
 
-    const handleClick = (day, hour) => {
-      // Handle button click for the specific day and hour
-      console.log("Button clicked:", day, hour);
+    const getStatus = (day, hour) => {
+      if (
+        (day === "Mon" && hour === "09:00") ||
+        (day === "Tue" && hour === "18:00") ||
+        (day === "Wed" && hour === "13:00") ||
+        (day === "Thur" && hour === "20:00")||
+        (day === "Thur" && hour === "16:00") ||
+        (day === "Mon" && hour === "10:00") ||
+        (day === "Sat" && hour === "10:00") ||
+        (day === "Wed" && hour === "11:00") ||
+        (day === "Sat" && hour === "19:00") 
+      ) {
+        return "Equipped";
+      } else if (
+      (day === "Mon" && hour === "11:00") ||
+      (day === "Wed" && hour === "13:00") ||
+      (day === "Wed" && hour === "14:00") ||
+      (day === "Wed" && hour === "15:00") ||
+      (day === "Fri" && hour === "19:00") ||
+      (day === "Fri" && hour === "20:00") ||
+      (day === "Wed" && hour === "13:00") ||
+      (day === "Tue" && hour === "11:00") ||
+      (day === "Tue" && hour === "10:00") ||
+      (day === "Wed" && hour === "11:00") ||
+      (day === "Wed" && hour === "12:00") ||
+      (day === "Wed" && hour === "10:00") ||
+      (day === "Wed" && hour === "13:00") ||
+      (day === "Wed" && hour === "13:00") ||
+      (day === "Wed" && hour === "13:00") ||
+      (day === "Wed" && hour === "13:00") ||
+      (day === "Fri" && hour === "09:00") ||
+      (day === "Fri" && hour === "10:00") 
+
+      )
+      {
+        return "Available";
+      } else {
+        return "Unavailable";
+      }
     };
 
     for (let hour = 9; hour <= 22; hour++) {
-      const time = hour.toString().padStart(2, "0") + ":00 ";
+      const time = hour.toString().padStart(2, "0") + ":00";
       hours.push(
         <tr key={hour}>
           <td className="hour">{time}</td>
           {days.map((day, index) => {
-            const isRamiAvail = isRamiAvailable(day, time);
-            const isJadAvail = isJadAvailable(day, time);
+            const status = getStatus(day, time);
             let color = "";
 
-            if (isRamiAvail && isJadAvail) {
-              color = "black";
-            } else if (isRamiAvail) {
+            if (status === "Equipped") {
+              color = "blue";
+            } else if (status === "Available") {
               color = "green";
-            } else if (isJadAvail) {
+            } else if (status === "Unavailable") {
               color = "red";
             }
 
             return (
-              <td key={index} className="day">
-                <BasicModal>
-                  <button
-                    className={`color-point ${color}`}
-                    onClick={() => handleClick(day, time)}
-                  >
-                    {day} - {time}
-                  </button>
-                </BasicModal>
+              <td key={index} className={`day ${color}`}>
+                {status}
               </td>
             );
           })}
