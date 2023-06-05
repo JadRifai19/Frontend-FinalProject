@@ -30,6 +30,23 @@
   .remove-from-shopping-cart:hover {
     background-color: black;
   }
+
+  
+  .save-from-shopping-cart {
+    background-color: red;
+    font-size: 17px;
+    color: white;
+    border: none;
+    margin-right: 120px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right; 
+  }
+  
+  .save-from-shopping-cart:hover {
+    background-color: black;
+  }
   
   .shopping-cart li {
     margin-bottom: 20px;

@@ -8,10 +8,21 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useLocation } from "react-router-dom";
 
 export default function Footer() {
+  const location = useLocation().pathname;
   const [message, setMessage] = useState("");
   const [sent, setSent] = useState(false);
+
+  if (
+    location === "/dashboard-home" ||
+    location === "/dashboard" ||
+    location === "/dashboard-Product" ||
+    location === "/dashboard-Admin" ||
+    location === "/dashboard-Inbox"
+  )
+    return null;
 
   const sendMessage = () => {
     if (message.trim() !== "") {
@@ -30,6 +41,7 @@ export default function Footer() {
       });
     }
   };
+
 
   return (
     <div className="footer-container">

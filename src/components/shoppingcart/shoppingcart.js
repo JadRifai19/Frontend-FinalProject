@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './shoppingcart.css';
 
 const ShoppingCart = ({ cartItems, removeFromCart }) => {
   const isCartEmpty = !cartItems || cartItems.length === 0;
+  const [notification, setNotification] = useState('');
+
+  const handleSave = () => {
+    if (cartItems.length > 0) {
+      setNotification('Products saved successfully.');
+      setTimeout(() => {
+        setNotification('');
+        for (let i = cartItems.length - 1; i >= 0; i--) {
+          removeFromCart(i);
+        }
+      }, 1000);
+    }
+  };
+  
 
   return (
     <div className={`shopping-cart ${isCartEmpty ? 'hidden' : ''}`}>
@@ -22,6 +36,10 @@ const ShoppingCart = ({ cartItems, removeFromCart }) => {
           ))}
         </ul>
       )}
+      <button onClick={handleSave} className="save-from-shopping-cart">
+        Save
+      </button>
+      {notification && <p className="notification">{notification}</p>}
     </div>
   );
 };

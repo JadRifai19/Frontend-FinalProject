@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 1650px;
+  max-width: 1800px;
   padding: 12px;
 }
 
@@ -139,11 +139,14 @@
 
   .team {
     margin-bottom: 4rem;
+    margin-inset: 5%;
   }
 
   .hourlyCalendar {
-    margin: 0;
+    margin: 2%;
+    margin-left: -2%;
   }
+
 
   .hourlyCalendar .day {
     width: 100%;
@@ -153,6 +156,7 @@
     position: static;
     margin-top: 20px;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -161,29 +165,22 @@
     height: 150px;
   }
 
-  .coachName {
-    font-size: 1rem;
-  }
-
-  .hourlyCalendar th,
-  .hourlyCalendar td {
-    padding: 8px;
-  }
-
   .hourlyCalendar .hour {
-    font-size: 14px;
-  }
-
-  .hourlyCalendar .day {
     font-size: 12px;
   }
+  
+
+  .hourlyCalendar .day {
+    font-size: 6px;
+  }
+
 
   .trainingSchedule h3 {
-    font-size: 18px;
+    font-size: 6px;
   }
 
   .legend {
-    font-size: 16px;
+    font-size: 6px;
   }
 
   .legend-item .color-point {
@@ -193,8 +190,9 @@
   }
 
   .legend-item span {
-    font-size: 12px;
+    font-size: 2px;
   }
+  
 }
 
 .blue {

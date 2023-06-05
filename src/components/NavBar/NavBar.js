@@ -7,10 +7,12 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
+import { useLocation } from "react-router-dom";
 import ShoppingCart from "../shoppingcart/shoppingcart.js";
 
 function Navbar({ cartItems, removeFromCart }) {
+  const location = useLocation().pathname;
+
   // State variables
   const [menuOpen, setMenuOpen] = useState(false);
   const [click, setClick] = useState(false);
@@ -21,7 +23,6 @@ function Navbar({ cartItems, removeFromCart }) {
   // Toggle click event for mobile menu
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
 
   // Handle mouse enter and leave events for dropdown
   const onMouseEnter = () => {
@@ -64,8 +65,18 @@ function Navbar({ cartItems, removeFromCart }) {
     }
     setClick(false);
   };
-  
-  
+
+  // Render the component if location condition is not met
+  if (
+    location === "/dashboard-home" ||
+    location === "/dashboard" ||
+    location === "/dashboard-Product" ||
+    location === "/dashboard-Admin" ||
+    location === "/dashboard-Inbox"
+  ) {
+    return null;
+  }
+
   return (
     <>
       <nav className="navbar">

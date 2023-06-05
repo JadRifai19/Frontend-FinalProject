@@ -16,7 +16,11 @@ export default function teamtraining() {
       <div className="hero-section-training-team">
         <img src={family2} alt="Hero Image" />
         <div className="hero-text">
-        <span> "Team Training" </span> <br /> <p className="hero-text-p"> Unite, Train, and Excel as a Ping Pong Powerhouse </p>
+          <span> "Team Training" </span> <br />{" "}
+          <p className="hero-text-p">
+            {" "}
+            Unite, Train, and Excel as a Ping Pong Powerhouse{" "}
+          </p>
         </div>
       </div>
       <div className="header"></div>
@@ -24,8 +28,15 @@ export default function teamtraining() {
         <div className="about-team-training">
           <div className="left">
             <h1 className="title-team-training">Team A : Coach Rami</h1>
+            <div/>
             <hr />
-
+            <div className="right">
+              <img
+                classname="image-coch-team-training"
+                src={ramiImageSrc}
+                alt="Coach Rami"
+              />
+            </div>
             <table className="schedule-table">
               <thead>
                 <tr>
@@ -55,17 +66,18 @@ export default function teamtraining() {
               Quibusdam, architecto?
             </p>
           </div>
-          <div className="right">
-            <img src={ramiImageSrc} alt="Coach Rami" />
-          </div>
         </div>
         <div className="mission">
-          <div className="left">
-            <img src={jadImageSrc} alt="Coach Jad" />
-          </div>
           <div className="right">
             <h1 className="title-team-training">Team B : Coach Jad</h1>
             <hr />
+            <div className="left">
+              <img
+                classname="image-coch-team-training"
+                src={jadImageSrc}
+                alt="Coach Jad"
+              />
+            </div>
             <table className="schedule-table">
               <thead>
                 <tr>

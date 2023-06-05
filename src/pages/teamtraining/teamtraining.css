@@ -1,5 +1,6 @@
 .team-players {
   text-align: center;
+  margin-top: 40px;
 }
 
 .player-grid {
@@ -40,7 +41,7 @@
 .meet-our-best-team {
   margin-top: -90px;
   font-size: 50px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .we-are-proud-team {
@@ -90,7 +91,7 @@
 
 .about-team-training .left {
   padding: 2% 0;
-  float: left;
+  text-align: left;
   width: 50%;
   display: inline-block;
 }
@@ -109,6 +110,10 @@
   text-align: center;
   color: blue;
 }
+.left{
+  display: flex;
+
+}
 
 .about-team-training .left hr {
   width: 28%;
@@ -123,7 +128,7 @@
 }
 
 .mission {
-  padding: 5% 0;
+  padding: 0;
   width: 100%;
   height: auto;
   background-color: #fff;
@@ -135,8 +140,9 @@
   display: inline-block;
 }
 
+
 .mission .left {
-  float: left;
+  text-align: left;
   width: 50%;
   display: inline-block;
 }
@@ -235,38 +241,121 @@
   font-weight: bold;
 }
 
-
 @media (max-width: 768px) {
   .player-grid {
     display: block;
   }
-  
+  .mission{
+    margin-top: 5px;
+  }
+
   .player-row {
     display: block;
     margin-bottom: 10px;
   }
-  
+
   .player-item {
     margin: 0 auto;
     text-align: center;
   }
-  
+
   .player-item img {
     margin: 0 auto;
   }
-  
+
   .player-item .player-name {
     position: static;
     display: block;
     margin-top: 10px;
     margin-bottom: 5px;
   }
-  .player-name{
+  .player-name {
     width: 60%;
     margin-left: 20%;
   }
-}
+  .container-team-training {
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .about-team-training,
+  .mission {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .player-grid {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .player-name {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .hero-text-p{
+    display: none;
+  }
+
+
+
+  .schedule-table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    float: left;
+  }
+
+  .about-team-training .left p,
+  .mission .right .description-team-training {
+    font-size: 12px;
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  .right img {
+    min-width: 220%;
+    max-height: 320px;
+  }
+  .left img {
+    width: 110%;
+    max-height: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .right .schedule-table {
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 90%;
+    float: none;
+  }
+  .team-players {
+    margin-top: 90px;
+  }
+  .team-training-content {
+    flex-direction: column;
+  }
+
+  .team-training-content .title-team-training {
+    margin-bottom: 0;
+  }
+
+  .team-training-content .image-coch-team-training {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+}
 
 @media (max-width: 480px) {
   .container-team-training {

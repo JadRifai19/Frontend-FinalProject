@@ -11,6 +11,7 @@ import PrivateTraining from './pages/privatetraining/privatetraining.js';
 import ContactUs from './pages/contactus/contactus.js';
 import ShoppingCart from './components/shoppingcart/shoppingcart';
 import Training from "./pages/training/training.js";
+import Dashboard from './pages/dashboard/dashboard';
 
 function App() {
   const [shoppingcart, setshoppingcart] = useState([]);
@@ -26,6 +27,7 @@ function App() {
         <Route path="/privatetraining" element={<PrivateTraining />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path='/training' element={<Training />} />
+        <Route path='/dashboard' element={<Dashboard />} />
       </Routes>
       <Footer />
     </Router>
