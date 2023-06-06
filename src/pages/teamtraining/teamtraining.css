@@ -1,6 +1,6 @@
 .team-players {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .player-grid {
@@ -110,9 +110,8 @@
   text-align: center;
   color: blue;
 }
-.left{
+.left {
   display: flex;
-
 }
 
 .about-team-training .left hr {
@@ -139,7 +138,6 @@
   width: 50%;
   display: inline-block;
 }
-
 
 .mission .left {
   text-align: left;
@@ -192,6 +190,7 @@
 .right {
   flex: 1;
   padding: 20px;
+  margin-top: 30px;
 }
 
 .title-team-training {
@@ -200,15 +199,23 @@
 }
 
 .description-team-training {
-  font-size: 16px;
   margin-bottom: 10px;
 }
 
+.jad {
+  margin-top: 250px;
+  text-align: center;
+  font-size: 30px;
+}
+
 .schedule-table {
-  margin-left: 5%;
-  width: 90%;
+  margin-left: 55%;
+  width: 45%;
   border-collapse: collapse;
-  margin-top: 80px;
+  margin-top: -360px;
+}
+.jad .description-team-training {
+  font-size: 30px;
 }
 
 .schedule-table th,
@@ -242,10 +249,13 @@
 }
 
 @media (max-width: 768px) {
+  .training-sessions {
+    overflow-x: hidden;
+  }
   .player-grid {
     display: block;
   }
-  .mission{
+  .mission {
     margin-top: 5px;
   }
 
@@ -263,6 +273,9 @@
     margin: 0 auto;
   }
 
+  .jad {
+    margin-top: 10%;
+  }
   .player-item .player-name {
     position: static;
     display: block;
@@ -284,6 +297,7 @@
   .mission {
     flex-direction: column;
     align-items: center;
+    width: 140%;
   }
 
   .left,
@@ -302,16 +316,15 @@
     width: 60%;
     margin-left: 20%;
   }
-  .hero-text-p{
+  .hero-text-p {
     display: none;
   }
-
-
 
   .schedule-table {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 90%;
+    width: 100%;
+    margin-left: 8%;
     float: left;
   }
 
@@ -354,7 +367,6 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
 }
 
 @media (max-width: 480px) {

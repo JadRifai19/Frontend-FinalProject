@@ -28,7 +28,7 @@ export default function teamtraining() {
         <div className="about-team-training">
           <div className="left">
             <h1 className="title-team-training">Team A : Coach Rami</h1>
-            <div/>
+            <div />
             <hr />
             <div className="right">
               <img
@@ -59,12 +59,16 @@ export default function teamtraining() {
                 </tr>
               </tbody>
             </table>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              incidunt hic eveniet enim beatae quis. Maiores, nostrum sunt ut
-              recusandae laborum voluptate amet sed, dolores hic quasi ab!
-              Quibusdam, architecto?
-            </p>
+            <div className="jad">
+              <p className="description-team-trainnig">
+                "Get ready to unleash your ping pong potential with Coach Rami's
+                Team A training sessions! Coach Rami is a seasoned coach known
+                for his innovative training methods and commitment to player
+                development. If you're seeking a supportive and challenging
+                environment to take your game to the next level, Coach Rami's
+                team is the perfect fit."
+              </p>
+            </div>
           </div>
         </div>
         <div className="mission">
@@ -100,12 +104,16 @@ export default function teamtraining() {
                 </tr>
               </tbody>
             </table>
-            <p className="description-team-trainnig">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              minus ea laborum nulla nisi amet, explicabo magnam aspernatur
-              doloribus distinctio est officiis placeat harum, nam iure, culpa
-              vitae exercitationem itaque!
-            </p>
+            <div className="jad">
+              <p className="description-team-trainnig">
+                "Welcome to Coach Jad's Team B training sessions! If you're
+                looking to elevate your ping pong skills and take your game to
+                new heights, you've come to the right place. Coach Jad brings a
+                wealth of experience and expertise to the table, with a passion
+                for nurturing talent and helping players reach their full
+                potential."
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -137,7 +145,7 @@ export default function teamtraining() {
             </div>
             <div className="player-item">
               <img src={player5ImageSrc} alt="Player 5" />
-              <div className="player-name">Yorgo Antoun</div>
+              <div className="player-name">Dani Wakim</div>
             </div>
             <div className="player-item">
               <img src={player6ImageSrc} alt="Player 6" />
